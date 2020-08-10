@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 100%;
+    text-align: center;
+    padding-top: 3em;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: "playfair display", serif;
+    font-weight: 900;
+    color: rgb(61, 61, 65);
+}
+
+.container {
+    padding: 2em 5% 0 5%;
+    width: 100%;
+}
+
+.options {
+    width: 100%;
+    margin: 1em 0;
+    background-color: rgb(61, 61, 65);
+    min-height: 10em;
+    border: rgb(117, 193, 212) 3px solid;
+}
+
+
+h2 {
+    font-family: "raleway", sans-serif;
+    font-weight: 600;
+    color: rgb(44, 46, 83);
+    font-size: 1.5em;
+}
+
+p {
+    font-family: "raleway", sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 1em;
+}
+
+.section_title {
+    background-color: #fff;
+    border-left: rgb(117, 193, 212) 3px solid;
+    border-bottom: rgb(117, 193, 212) 3px solid;
+    text-align: center;
+    width: 35%;
+    position: relative;
+    left: 65%;
+    margin: 0;
+}
+
+.section_title--beef {
+    color: #fff;
+    background-color: rgb(255, 136, 0);
+}
+
+.section_title--sushi {
+    color: rgb(255, 136, 0);
+}
+
+.dummy {
+    padding: 1em;
+}
+
+@media (min-width: 992px) {
+    .container {
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: space-between;
+    }
+
+    .options--col-lg-3 {
+        width: 31%;
+        float: left;
+    }
+
+    .options--col-lg-3 + .options--col-lg-3 {
+        margin-left: 3.5%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .container {
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: space-between;
+    }
+
+    .options--col-md-6 {
+        width: 48.5%;
+        float: left;
+    }
+
+    .options--col-md-6 + .options--col-md-6 {
+        margin-left: 3%;
+    }
+
+    .options--col-md-12 {
+        width: 100%;
+        float: left;
+    }
+
+    .section_title--sushi-md {
+        width: 17%;
+        left: 83%;
+    }
+}
